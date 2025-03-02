@@ -1,0 +1,22 @@
+GAL22V10
+MEMMAP
+
+CLK  A15  A14  A13  A12  A11  A10  A9   A8   NC   NC  GND
+/OE  ROM  RLO  RLC  RHO  RHC  IO   NC   NC   NC   NC  VCC
+
+ROM = /A15 + /A14
+IO = A15 + /A14 + /A13 + /A12 + /A11 + /A10 + /A9 + /A8
+RHO = /A15 + A14
+RHC = /A15 + A14 + /CLK
+RLO = A15
+RLC = A15 + /A14 + /A13 + /A12 + /A11 + /A10 + /A9 + /A8 + /CLK
+
+DESCRIPTION
+
+
+All signals as shown above are ACTIVE LOW
+
+* ROM:      0xC000 - 0xFFFF
+* HIGH RAM: 0x8000 - 0xBFFF
+* LOW  RAM: 0x0000 - 0x7EFF
+* I/O:      0x7F00 - 0x7FFF
