@@ -1,5 +1,5 @@
 EXEC = ../../galette/target/release/galette
-NAME = example
+NAME = nor
 
 $(NAME).jed: $(NAME).pld
 	$(EXEC) $(NAME).pld

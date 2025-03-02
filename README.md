@@ -33,3 +33,29 @@ Next, run
 
 For some of the examples provides under [plds](plds), there are also Makefiles
 available.
+
+Next, the resulting `.jed` file can be flashed onto the `ATF22V10` chip
+using a compatible chip flasher such as the TL866II+.
+
+> [!WARNING]  
+> According to the [datasheet](https://ww1.microchip.com/downloads/en/DeviceDoc/doc0735.pdf),
+> the `ATF22V10` chips have a limited number (i.e. 100) of erase/write cycles.
+
+> [!TIP]  
+> For verification purposes, *deselect* `Encrypt Chip`.
+
+> [!NOTES]  
+> The ATF22V10 has *weak sourcing capacity*, meaning it can only drive about 4mA
+> of current. It however has *strong sinking capacity*.
+
+## Logic equations
+
+| Symbol | Operation |
+|--------|-----------|
+| `*`    | AND       |
+| `+`    | OR        |
+| `!`    | NOT       |
+
+## Relevant links
+
+* https://mike42.me/blog/2021-10-programming-plds-with-open-source-software
