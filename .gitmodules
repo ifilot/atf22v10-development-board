@@ -1,0 +1,3 @@
+[submodule "galette"]
+	path = galette
+	url = git@github.com:simon-frankau/galette.git
